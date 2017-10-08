@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 
 class Detail extends Component {
     render() {
@@ -10,9 +9,5 @@ class Detail extends Component {
         );
     }
 }
-
-Detail.propTypes = {
-    //
-};
 
 export default Detail;

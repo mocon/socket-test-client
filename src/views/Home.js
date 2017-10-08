@@ -37,8 +37,8 @@ class Home extends Component {
                 <p className="App-intro">
                     {
                         (message !== null)
-                        ? <p><strong>{ message }</strong></p>
-                        : <p>No data coming from websocket</p>
+                        ? <strong>{ message }</strong>
+                        : <span>No data coming from websocket</span>
                     }
                 </p>
                 <Websocket
