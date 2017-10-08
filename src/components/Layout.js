@@ -1,13 +1,26 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Layout = ({ children }) => (
+import Header from './Header';
+import Sidebar from './Sidebar';
+import MainContent from './MainContent';
+
+const Layout = ({ username, children }) => (
     <div className="App">
-        { children }
+        <Sidebar />
+        <MainContent>
+            <Header
+                username={ username }
+            />
+            <div className="MainContent__Body">
+                { children }
+            </div>
+        </MainContent>
     </div>
 );
 
 Layout.propTypes = {
+    username: PropTypes.string.isRequired,
     children: PropTypes.node
 };
 

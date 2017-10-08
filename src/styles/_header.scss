@@ -1,0 +1,45 @@
+.Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 ($unit * 1.5);
+    height: $header-height;
+    color: $white;
+    background: $tertiary;
+    background: -moz-linear-gradient(45deg, $tertiary 0%, $light-gray 100%);
+    background: -webkit-linear-gradient(45deg, $tertiary 0%,$light-gray 100%);
+    background: linear-gradient(45deg, $tertiary 0%,$light-gray 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$tertiary', endColorstr='$light-gray',GradientType=1 );
+}
+
+.Header__Text {
+    margin-bottom: 0;
+}
+
+.HeaderSearch {
+    display: flex;
+}
+
+.HeaderMenuItems {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.HeaderMenuItems__UserName {
+    margin-right: ($unit * 0.75);
+    margin-bottom: ($unit / 4);
+}
+
+.Header__Icon--Search {
+    position: relative;
+    top: 2px;
+    font-size: ($unit * 2);
+    margin-right: ($unit * 0.75);
+}
+
+.Header__Icon--User {
+    position: relative;
+    top: 1px;
+    font-size: ($unit * 4);
+}

@@ -1,15 +1,16 @@
 import React, { Component } from 'react';
-import Websocket from 'react-websocket';
+// import Websocket from 'react-websocket';
 
 import Layout from '../components/Layout';
-import logo from '../images/logo.svg';
+// import logo from '../images/logo.svg';
 
-const WEBSOCKET_URL = 'ws://localhost:8080';
+// const WEBSOCKET_URL = 'ws://localhost:8080';
 
 class Home extends Component {
     constructor(props) {
         super(props);
         this.state = {
+            username: 'David Rodriguez',
             message: null
         };
     }
@@ -28,21 +29,14 @@ class Home extends Component {
     }
 
     render() {
-        const { message } = this.state;
+        const { username } = this.state;
 
         return (
-            <Layout>
-                <header className="App-header">
-                    <img src={ logo } className="App-logo" alt="logo" />
-                    <h1 className="App-title">Testing websocket connection</h1>
-                </header>
-                <p className="App-intro">
-                    {
-                        (message !== null)
-                        ? <strong>{ message }</strong>
-                        : <span>No data coming from websocket</span>
-                    }
-                </p>
+            <Layout
+                username={ username }
+            >
+                <h1>Home</h1>
+                {/*
                 <Websocket
                     url={ WEBSOCKET_URL }
                     onOpen={ this.onOpen }
@@ -50,6 +44,12 @@ class Home extends Component {
                     onMessage={ this.handleData }
                     debug={ true }
                 />
+                {
+                    (message !== null)
+                    ? <strong>{ message }</strong>
+                    : <span>No data coming from websocket</span>
+                }
+                */}
             </Layout>
         );
     }

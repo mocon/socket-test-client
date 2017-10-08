@@ -1,0 +1,21 @@
+.Sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: $extra-light-gray;
+    box-shadow: inset -4px 0 $unit 0 rgba(black, 0.1);
+}
+
+.SidebarHeader {
+    display: flex;
+    align-items: center;
+    padding: 0 ($unit * 2);
+    height: $header-height;
+    color: $white;
+    background-color: $primary;
+}
+
+.SidebarHeader__Text {
+    margin-bottom: ($unit / 4);
+    font-style: italic;
+}

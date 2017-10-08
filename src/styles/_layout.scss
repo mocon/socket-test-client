@@ -1,0 +1,22 @@
+#root {
+    width: 100%;
+    height: 100%;
+}
+
+.App {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.MainContent {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.MainContent__Body {
+    display: flex;
+    flex: 1;
+    padding: ($unit * 2);
+}
