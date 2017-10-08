@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import Websocket from 'react-websocket';
+
+import Layout from '../components/Layout';
 import logo from '../images/logo.svg';
 
 const WEBSOCKET_URL = 'ws://localhost:8080';
@@ -13,7 +15,7 @@ class Home extends Component {
     }
 
     onOpen = () => {
-        console.log('Connection opened.');
+        // console.log('Connection opened.');
     }
 
     handleData = (data) => {
@@ -29,7 +31,7 @@ class Home extends Component {
         const { message } = this.state;
 
         return (
-            <div className="App">
+            <Layout>
                 <header className="App-header">
                     <img src={ logo } className="App-logo" alt="logo" />
                     <h1 className="App-title">Testing websocket connection</h1>
@@ -48,7 +50,7 @@ class Home extends Component {
                     onMessage={ this.handleData }
                     debug={ true }
                 />
-            </div>
+            </Layout>
         );
     }
 }
