@@ -54,6 +54,7 @@ body {
   padding: 0 1.5rem;
   height: 5rem;
   color: #ffffff;
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
   background: #6DBCDB;
   background: -moz-linear-gradient(45deg, #6DBCDB 0%, #D7DADB 100%);
   background: -webkit-linear-gradient(45deg, #6DBCDB 0%, #D7DADB 100%);
@@ -64,7 +65,13 @@ body {
   margin-bottom: 0; }
 
 .HeaderSearch {
-  display: flex; }
+  display: flex;
+  align-items: center;
+  height: 100%; }
+
+.HeaderSearch__Text {
+  font-size: 1.5rem;
+  margin-bottom: 0; }
 
 .HeaderMenuItems {
   display: flex;
@@ -72,16 +79,17 @@ body {
   align-items: center; }
 
 .HeaderMenuItems__UserName {
+  font-size: 1.5rem;
   margin-right: 0.75rem;
-  margin-bottom: 0.25rem; }
+  margin-bottom: 0; }
 
 .Header__Icon--Search {
   position: relative;
   top: 2px;
-  font-size: 2rem;
+  font-size: 2.25rem;
   margin-right: 0.75rem; }
 
 .Header__Icon--User {
   position: relative;
-  top: 1px;
+  top: 2px;
   font-size: 4rem; }

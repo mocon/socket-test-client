@@ -5,6 +5,7 @@
     padding: 0 ($unit * 1.5);
     height: $header-height;
     color: $white;
+    text-shadow: 0 1px 5px rgba(black, 0.15);
     background: $tertiary;
     background: -moz-linear-gradient(45deg, $tertiary 0%, $light-gray 100%);
     background: -webkit-linear-gradient(45deg, $tertiary 0%,$light-gray 100%);
@@ -18,6 +19,13 @@
 
 .HeaderSearch {
     display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.HeaderSearch__Text {
+    font-size: ($unit * 1.5);
+    margin-bottom: 0;
 }
 
 .HeaderMenuItems {
@@ -27,19 +35,20 @@
 }
 
 .HeaderMenuItems__UserName {
+    font-size: ($unit * 1.5);
     margin-right: ($unit * 0.75);
-    margin-bottom: ($unit / 4);
+    margin-bottom: 0;
 }
 
 .Header__Icon--Search {
     position: relative;
     top: 2px;
-    font-size: ($unit * 2);
+    font-size: ($unit * 2.25);
     margin-right: ($unit * 0.75);
 }
 
 .Header__Icon--User {
     position: relative;
-    top: 1px;
+    top: 2px;
     font-size: ($unit * 4);
 }

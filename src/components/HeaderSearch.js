@@ -3,9 +3,10 @@ import React from 'react';
 
 const HeaderSearch = () => (
     <div className="HeaderSearch">
-        <p className="Header__Text">
-            <span className="Header__Icon--Search pe-7s-search" />Search
+        <p className="HeaderSearch__Text">
+            <span className="Header__Icon--Search pe-7s-search" />
         </p>
+        <p className="HeaderSearch__Text">Search</p>
     </div>
 );
 
